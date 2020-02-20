@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>ESSEC Initiatives</title>
+    <meta name="title" content="ESSEC Initiatives">
+    <meta name="description" content="L'association d'entrepreneuriat de l'ESSEC">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="build/tailwind.css">
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/2bdc394e32.js" crossorigin="anonymous"></script>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!--Facebook-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://essecinitiatives.io/">
+    <meta property="og:title" content="ESSEC Initiatives">
+    <meta property="og:description" content="L'association d'entrepreneuriat de l'ESSEC">
+    <meta property="og:image" content="https://essecinitiatives.io/images/social.jpg">
+    <meta property="og:url" content="https://essecinitiatives.io/index.html">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://essecinitiatives.io/">
+    <meta property="twitter:title" content="ESSEC Initiatives">
+    <meta property="twitter:description" content="L'association d'entrepreneuriat de l'ESSEC">
+    <meta property="twitter:image" content="https://essecinitiatives.io/images/social.jpg">
+
+</head>
+
+<body class="bg-nitiatdark">
+
+    <!--Beginning of the header-->
+    <div class="hidden md:inline-flex w-full fixed flex flex-row justify-between bg-transparent lg:bg-nitiatdark">
+
+        <a href="index.html"><img src="images/nitiatalt.png" alt="" class="px-1 py-2 ml-2 h-20"></a>
+
+        <div class=" h-20 mr-8 flex flex-row justify-center items-center text-white">
+            <a href="missions.html" class="px-3 text-xl font-bold text-nitiatlight">Missions</a>
+            <a href="http://tedxessecbusinessschool.fr" class="px-3 text-xl font-bold">TEDx</a>
+            <a href="events.html" class="px-3 text-xl font-bold">Évènements</a>
+            <a href="contact.html" class="px-3 text-xl font-bold">Contact</a>
+        </div>
+
+    </div>
+
+    <div class="md:hidden w-full fixed flex flex-col justify-center items-end">
+        <div class="w-full flex flex-row justify-around items-center self-center bg-nitiatdark">
+            <a href="index.html"><img src="images/nitiatalt.png" alt="" class="m-2 w-64 bg-nitiatdark"></a>
+
+            <div class="dropdown">
+                <img src="images/dropdown.png" alt="" onclick="myFunction()" class="dropbtn m-2 w-16 h-16">
+            </div>
+
+        </div>
+
+        <div id="myDropdown"
+            class="dropdown-content m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
+            <a href="missions.html"
+                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg hover:bg-nitiatlight">Missions</a>
+            <a href="http://tedxessecbusinessschool.fr"
+                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
+            <a href="events.html"
+                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
+            <a href="contact.html"
+                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
+        </div>
+
+
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+    </div>
+    <!--End of the header-->
+
+    <div class="flex flex-col justify-center items-center text-white font-hairline">
+
+
+
+        <!--Description of our missions-->
+
+        <div id="spacer" class="h-28"></div>
+
+        <div class="h-auto flex flex-col md:flex-row justify-center items-center">
+
+            <div class="w-full sm:w-96 md:w-96 lg:w-120  text-left lg:mr-12 px-6 lg:px-0">
+                <h1 class="text-4xl xs:text-5xl lg:text-6xl font-bold leading-none">Confiez-nous des projets</h1>
+
+                <div class="h-2 md:h-4"></div>
+
+                <h2 class="text-2xl xs:text-3xl lg:text-4xl font-bold leading-tight">pour vous concentrer <br>sur les
+                    autres.</h2>
+
+                <div class="h-6"></div>
+
+                <p class="text-lg lg:text-2xl"><span class="font-semibold">ESSEC Initiatives</span> réalise pour vous
+                    les projets que vous n'avez pas eu le temps d'approfondir : étude de marché, refonte du site
+                    internet...</p>
+
+            </div>
+
+            <div class="h-6 md:h-0"></div>
+
+            <img src="images/meeting.jpg" alt="" class="max-w-xs md:max-w-lg xl:max-w-2xl xl:pr-8">
+
+        </div>
+
+        <div id="spacer" class="h-12 md:h-20"></div>
+
+        <div class="h-20 w-full bg-nitiatlight flex flex-wrap justify-around items-center lg:px-32">
+            <img src="images/logo/groover.png" alt="" class="h-6">
+            <img src="images/logo/konexio.png" alt="" class="h-8 hidden md:inline">
+            <img src="images/logo/sui.png" alt="" class="h-8 hidden sm:inline">
+            <img src="images/logo/citygo.png" alt="" class="h-10">
+            <img src="images/logo/singa.png" alt="" class="h-8 hidden md:inline">
+        </div>
+
+        <div id="spacer" class="h-8"></div>
+
+
+        <!--Description of our services-->
+
+        <div class="flex justify-around flex-wrap">
+            <div class="w-80 md:w-96 px-0 p-3 md:p-6  text-center">
+                <p class="text-6xl">📈</p>
+                <h1 class="text-3xl font-semibold">Études de marché</h1>
+                <p class="text-lg">Études sectorielles, d’implantation, de <br class="hidden xl:inline">prix, veille
+                    concurrentielle, sondages</p>
+            </div>
+            <div class="w-80 md:w-96 px-0 p-3 md:p-6  text-center">
+                <p class="text-6xl">🔮</p>
+                <h1 class="text-3xl font-semibold">Stratégie marketing</h1>
+                <p class="text-lg font-light">Définition et mise en place d’une<br class="hidden xl:inline"> stratégie,
+                    communication innovante</p>
+            </div>
+            <div class="w-80 md:w-96 px-0 p-3 md:p-6  text-center">
+                <p class="text-6xl">💎</p>
+                <h1 class="text-3xl font-semibold">Communication</h1>
+                <p class="text-lg font-light">Changement d’identité visuelle, <br>réalisations de decks, affiches,
+                    flyers</p>
+            </div>
+            <div class="w-80 md:w-96 px-0 p-3 md:p-6  text-center">
+                <p class="text-6xl">💻</p>
+                <h1 class="text-3xl font-semibold">Développement web</h1>
+                <p class="text-lg ">Construction ou refonte de site internet,<br class="hidden xl:inline"> formations à
+                    l'usage de logiciels</p>
+            </div>
+            <div class="w-80 md:w-96 px-0 p-3 md:p-6  text-center">
+                <p class="text-6xl">🚀</p>
+                <h1 class="text-3xl font-semibold">Business development</h1>
+                <p class="text-lg font-light">Lead generation, qualification sur le CRM, démarchage en ligne ou physique
+                </p>
+            </div>
+            <div class="w-80 md:w-96 px-0 p-3 md:p-6  text-center">
+                <p class="text-6xl">🗺️</p>
+                <h1 class="text-3xl font-semibold">Projets à la carte</h1>
+                <p class="text-lg font-light">Des projets en tête qui ne rentrent <br>pas dans les cases : discutons-en
+                    !</p>
+            </div>
+        </div>
+
+        <div id="spacer" class="h-8"></div>
+
+
+
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup" class="w-full bg-nitiatlight h-20">
+            <form
+                action="https://gmail.us4.list-manage.com/subscribe/post?u=d505c3957275f7f067555d3ad&amp;id=c5aaee2f05"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                novalidate>
+
+                <div id="mc_embed_signup_scroll"
+                    class="h-32 md:h-20 bg-nitiatlight w-full flex flex-col md:flex-row justify-center items-center px-32">
+
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL"
+                            class="required email outline-none focus:placeholder-transparent bg-white h-10 w-72 px-3 text-center md:text-left text-xl text-black focus:outline-none rounded-t-lg md:rounded-t-none md:rounded-l-lg appearance-none leading-normal"
+                            id="mce-EMAIL" placeholder="elon.musk@tesla.com">
+                    </div>
+                    <div id="mce-responses" class="hidden clear ">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_2871a049c588e5f1cddcd5ff2_359ee423f1" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Demandez un devis" name="subscribe"
+                            id="mc-embedded-subscribe"
+                            class="cursor-pointer bg-nitiatdark h-10 w-72 text-xl block text-white rounded-b-lg md:rounded-b-none md:rounded-r-lg hover:text-gray-400 outline-none">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="spacer" class="w-full h-20 md:h-12"></div>
+
+        <div class="h-auto flex flex-col md:flex-row justify-center items-center">
+
+            <div class="w-72 xs:w-80 md:w-100 font-light xs:text-xl text-justify leading-snug md:mr-10">
+                <p>"L’équipe d’ESSEC Initiatives a fait preuve d’un grand professionnalisme dans la prise en main de sa
+                    mission pour Citygo. <span class=font-semibold>Aussi bien dans la communication tout au long de la
+                        mission pour assurer la bonne atteinte des objectifs que dans les livrables délivrés dans les
+                        temps.</span> Nous avons naturellement pensé à les solliciter de nouveau en 2019."</p>
+            </div>
+
+            <div id="spacer" class="h-8 md:h-0"></div>
+
+            <div class="flex flex-row justify-center items-center">
+                <img src="images/prc.jpeg" class="h-20 md:h-32 rounded-full mr-4 hidden xs:inline">
+
+                <div class="flex flex-col justify-center items-left text-white">
+                    <h3 class="text-lg font-bold leading-tight">Patrick Robinson Clough</h3>
+                    <h4 class="text-lg font-thin leading-tight">Co-founder & CEO</h4>
+                    <img src="images/citygo.png" alt="" class="w-40">
+                </div>
+            </div>
+        </div>
+
+        <div id="spacer" class="h-12"></div>
+
+    </div>
+
+
+    <!--Complementary information-->
+
+    <footer class="px-8 md:px-10 lg:px-20 xl:px-40 bg-gray-900 text-gray-600 text-sm"
+        style="background-image: url(images/rocket.png);background-position:center;background-size:cover">
+
+        <div class="w-full h-8"></div>
+
+        <div class="flex flex-col md:flex-row justify-around items-start">
+            <div class="w-full md:w-1/4 md:px-6 flex flex-col justify-center items-justify">
+                <h3 class="text-lg font-bold text-gray-500">Mentions légales</h3>
+
+                <div class="h-1"></div>
+
+                <h4 class="font-bold">Directeur de la publication :</h4>
+                <p>Grégoire Deshusses</p>
+
+                <div class="h-2"></div>
+
+                <p><span class="font-bold">Éditeur :</span> Ce site est produit par ESSEC Initiatives. Pour toute
+                    question relative au site, contactez essecinitiatives@gmail.com.</p>
+            </div>
+
+            <div id="spacer" class="h-4 md:h-0"></div>
+
+            <div class="w-full md:w-1/4 md:px-2 flex flex-col justify-center items-justify">
+                <h3 class="text-lg font-bold text-gray-500">À propos de l'association</h3>
+
+                <div class="h-1"></div>
+
+                <p>ESSEC Initiatives est une association étudiante (Siren: 418 278 412 R.C.S. Paris) dépendante de
+                    l'École Supérieure des Sciences Économiques et Commerciales. Son siège social est au 3 Avenue
+                    Bernard Hirsch, 95000 Cergy.</p>
+            </div>
+
+            <div id="spacer" class="h-4 md:h-0"></div>
+
+            <div class="w-full md:w-1/4 md:px-6 flex flex-col justify-center items-justify">
+                <h3 class="text-lg font-bold text-gray-500">Nous rejoindre</h3>
+
+                <div class="h-1"></div>
+
+                <p>L'association est réservée aux étudiants de l'ESSEC. Quiconque peut présenter sa candidature aux deux
+                    sessions annuelles de recrutement ayant lieu en Octobre et en Mars.</p>
+            </div>
+
+            <div id="spacer" class="h-4 md:h-0"></div>
+
+            <div class="w-full md:w-1/4 flex flex-col justify-center items-justify">
+                <h3 class="text-lg font-bold text-gray-500">Sur les réseaux</h3>
+
+                <div>
+                    <button class="text-3xl inline-block bg-transparent mx-1 hover:text-gray-800"><a
+                            href="https://fr.linkedin.com/company/essec-initiatives"><i
+                                class="fab fa-linkedin-in"></i></a></button>
+
+                    <button class="text-3xl inline-block bg-transparent mx-1 hover:text-gray-800"><a
+                            href="https://fr-fr.facebook.com/essec.initiatives/"><i
+                                class="fab fa-facebook-f"></i></a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full h-8"></div>
+
+    </footer>
+
+</body>
+
+</html>
