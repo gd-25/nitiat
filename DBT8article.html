@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>ESSEC Initiatives</title>
+    <meta name="title" content="ESSEC Initiatives">
+    <meta name="description" content="ESSEC Initiatives est l'association d'entrepreneuriat de l'ESSEC. Nous réalisons des missions pour des startups,
+organisons le TEDxESSECBusinessSchool, et proposons plusieurs évènements autour de l'entrepreneuriat sur le campus.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="build/tailwind.css">
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/2bdc394e32.js" crossorigin="anonymous"></script>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!--Facebook-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://essecinitiatives.io/">
+    <meta property="og:title" content="ESSEC Initiatives">
+    <meta property="og:description" content="ESSEC Initiatives est l'association d'entrepreneuriat de l'ESSEC. Nous réalisons des missions pour des startups,
+organisons le TEDxESSECBusinessSchool, et proposons plusieurs évènements autour de l'entrepreneuriat sur le campus.">
+    <meta property="og:image" content="https://essecinitiatives.io/images/social.png">
+    <meta property="og:url" content="https://essecinitiatives.io/index.html">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://essecinitiatives.io/">
+    <meta property="twitter:title" content="ESSEC Initiatives">
+    <meta property="twitter:description" content="ESSEC Initiatives est l'association d'entrepreneuriat de l'ESSEC. Nous réalisons des missions pour des startups,
+organisons le TEDxESSECBusinessSchool, et proposons plusieurs évènements autour de l'entrepreneuriat sur le campus.">
+    <meta property="twitter:image" content="https://essecinitiatives.io/images/social.png">
+    
+    
+
+</head>
+
+<body class="bg-nitiatdark">
+
+    <div class="hidden md:inline-flex w-full fixed flex flex-row justify-between bg-transparent lg:bg-nitiatdark">
+
+        <a href="index.html"><img src="images/nitiatalt.png" alt="" class="px-1 py-2 ml-2 h-20"></a>
+
+        <div class=" h-20 mr-8 flex flex-row justify-center items-center text-white active:text-nitiatlight">
+            <a href="missions.html" class="px-3 text-xl font-bold hover:text-nitiatlight">Missions</a>
+            <a href="https://tedxessecbusinessschool.fr" target="_blank" class="px-3 text-xl font-bold hover:text-tedred">TEDx</a>
+            <a href="events.html" class="px-3 text-xl font-bold hover:text-nitiatlight">Évènements</a>
+            <a href="education.html" class="px-3 text-xl font-bold hover:text-nitiatlight">Éducation</a>
+            <a href="contact.html" class="px-3 text-xl font-bold hover:text-nitiatlight">Contact</a>
+        </div>
+
+    </div>
+
+    <div class="md:hidden w-full fixed flex flex-col justify-center items-end">
+        <div class="w-full flex flex-row justify-around items-center self-center bg-nitiatdark">
+            <a href="index.html"><img src="images/nitiatalt.png" alt="" class="m-2 w-64 bg-nitiatdark"></a>
+
+            <div class="dropdown">
+                <img src="images/dropdown.png" alt="" onclick="myFunction()" class="dropbtn m-2 w-16 h-16">
+            </div>
+
+        </div>
+
+        <div id="myDropdown" class="dropdown-content m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
+            <a href="missions.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg hover:bg-nitiatlight">Missions</a>
+            <a href="https://tedxessecbusinessschool.fr" target="_blank" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
+            <a href="events.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
+            <a href="education.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Éducation</a>
+            <a href="contact.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
+        </div>
+
+
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+    </div>
+
+    <div id="spacer" class="h-32"></div>
+
+    <div class="flex flex-row justify-around items-center">
+        <div><img src="images/alexis-card.jpg" class="m-6" height="600px" width="500px"></div>
+        <div class="flex-col justify-center items-center">
+            <p class="font-bold text-5xl m-6 text-white text-center">DBT #8 - Alexis Angot</p>
+            <img src="images/fusee.png" height="60px" width="60px" class="mx-auto">
+            <p class="font-bold m-2 p-2 text-white text-center ">PAR RAPHAEL RUEGGER</p>
+            <p class="text-base mb-10 text-nitiatlight text-center">10 NOVEMBRE 2020</p>
+            <p class="text-base mb-10 italic text-white text-center">Avec 300 millions d’euros levés en octobre 2020, la startup Ynsect a pour projet
+                <br>de “construire la plus grande ferme d’insectes au monde” à Amiens : 500 emplois 
+                <br>créés pour produire, à terme, plus de 200.000 tonnes d’ingrédients par an.
+                <br>Créée en 2011, la startup a depuis déployé ses ailes pour intégrer le Next40. 
+                <br>Entretien avec Alexis Angot, co-fondateur.</p>
+            <div class="flex flex-row justify-center" height="50px" width="50px">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"><img src="images/fb-icon.png" height="60px" width="60px" class="justify-start"> 
+                </a>
+                <div class="pt-4 pl-10"><script src="https://platform.linkedin.com/in.js" class="pl-8" type="text/javascript">lang: en_US</script>
+                <script type="IN/Share" data-url="https://www.linkedin.com" class="mx-auto"></script>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center align-items-center">
+        <p class="pt-20 px-40 text-m text-white text-left font-bold"> Vous avez été diplômé de l’ESSEC en 2008, en 2011 vous fondiez Ynsect, comment avez-vous eu cette idée et comment se sont passés les premiers mois de l’aventure ?</p>
+
+            <p class="pt-2 px-40 text-m text-white text-left"> Déjà étudiant à l’ESSEC j’avais une forte attirance pour l’entrepreneuriat et l’impact. Je suivais d’ailleurs les cours de la Chaire entrepreneuriat social et à côté de ça j’étais à ESE (ESSEC Solutions Entreprises) et dans l’association de développement durable. Ensuite j’ai commencé ma carrière professionnelle dans un organisme de micro-crédit et en parallèle j’étais très engagé dans une association, Worgamic, qui travaille sur les thématiques d’alimentation durable. C’est comme ça que j’ai rencontré Antoine, on menait des projets très concrets mais on portait aussi beaucoup de réflexions et notamment sur les insectes. J’ai ramené deux amis à moi, Fabrice et Jean-Gabriel, à quatre on a lancé notre startup avec cet objectif un peu fou d'élever des insectes à grande échelles pour en faire des aliments d’intérêt pour les animaux naturellement insectivores comme les truites, les saumons, les volailles ou encore un certain nombre d’animaux domestiques.</p>
+            
+            <p class="pt-5 px-40 text-m text-white text-left font-bold">Vous le dîtes vous-même, Ynsect est un projet “un peu fou”, comment avez-vous convaincu les premiers investisseurs de vous suivre ?</p>
+            
+            <p class="pt-2 px-40 text-m text-white text-left">On a eu l’idée de Ynsect en 2010, on a déposé les statuts de l’entreprise en 2011, mais ce n’est qu’en 2014, c’est à dire au moment de notre première levée de fonds (1,8 M€), que nous sommes passés à 100% sur le projet. Même si on avait des CV d’écoles plutôt sympathiques notre projet avait l’air complètement fou. On avait conscience que convaincre des personnes de nous financer serait assez long, c’est pour cela qu’on a gardé nos jobs à temps partiel aussi longtemps.  Pour faire avancer le projet, on se relayait le soir et le weekend. C’est aussi ça la force d’être quatre associés. Les premières années on a énormément pitché dans des concours, on a vraiment fait pivoter notre projet plusieurs fois et des investisseurs nous ont vus à plusieurs reprises, à chaque fois avec des évolutions et des améliorations. On a créé une relation de confiance avec eux et, un jour, un investisseur s’est dit ‘ok, ils ont une idée folle, mais ils s’accrochent et ils avancent’. Les premières personnes à convaincre pour nous ce n’était pas les clients qui -soyons honnêtes- ne pensaient pas que c’était possible de produire des insectes à grande échelle, mais les investisseurs. Et puis, soyons honnêtes une nouvelle fois : il y a une part de hasard, de chance...</p>
+            
+            <p class="pt-5 px-40 text-m text-white text-left font-bold">Quels ont été les principaux obstacles à la création d’Ynsect, peut-être certains subsistent-ils encore ? Comment cherchez-vous à les dépasser ?</p>
+            
+            <p class="pt-2 px-40 text-m text-white text-left">Quand vous lancez un business complètement disruptif, on pense bien souvent aux obstacles techniques, financiers et commerciaux. Mais il ne faut pas négliger l’obstacle règlementaire : quand nous avons créé Ynsect, il n’y avait aucune règlementation qui nous concernait, on a dû batailler pendant plus de 3 ans pour que les farines d’insectes soient autorisées pour nourrir les poissons.</p>
+            
+            <p class="pt-5 px-40 text-m text-white text-left font-bold">Aujourd’hui vous évoluez dans un secteur assez méconnu du grand public, pouvez-vous nous dire quels sont vos principaux concurrents et comment vous parvenez à vous démarquer ?</p>
+            
+            <p class="pt-2 px-40 text-m text-white text-left">Avec Ynsect on a une caractéristique très particulière, on a choisi d’élever des scarabées là où presque tous nos concurrents ont fait le choix d’élever des mouches. Ces animaux étant très différents, on a donc des produits très différents. Je dirai donc que nous sommes donc peu en concurrence sur le plan commercial, puisque nous vendons des produits distincts. En revanche, nous sommes en concurrence directe pour les financements : il faut bien comprendre que pour produire suffisamment d’insectes il faut des usines de grande taille, les besoins de financements sont colossaux. Un investisseur va donc faire son choix entre le scarabée et la mouche mais il n’investira pas sur les deux.</p>
+            
+            <p class="pt-4 px-40 text-m text-white text-left font-bold">Vous avez lancé Ynsect à quatre associés, quelle a été votre relation durant toutes ses années ?</p> 
+            
+            <p class="pt-1 px-40 text-m text-white text-left">J’insiste vraiment sur la puissance de la relation que vous arrivez à créer avec vos co-fondateurs. Tout de suite on a su qui allait être responsable de quoi grâce à la complémentarité de nos parcours, agro, polytechnique, informatique, gestion… On ne se marchait pas sur les pieds ! Au-delà de cette complémentarité on avait un très bon niveau d’échange. La première raison d’échec dans une startup c’est les clashs entre associés, surtout au début car c’est à ce moment-là qu’on doit se positionner, arbitrer et que les visions peuvent diverger. Rapidement, on avait mis en place un certain nombre de règles et d’outils pour apaiser les tensions. Quand vous êtes quatre, le potentiel de tensions est démultiplié, de même que la force de frappe. Être quatre avec ces règles de bon fonctionnement, ça nous a permis d’être plus résilients aux difficultés auxquelles on faisait face.</p>
+            
+            <p class="pt-4 px-40 text-sm text-white text-left font-bold">Ynsect c’est déjà une entreprise de 150 employés, vous venez de lever 300 millions d’euros auprès de plusieurs investisseurs dont la Banque des Territoires, quels sont vos prochains objectifs ?</p>
+            
+            <p class="pt-1 px-40 text-sm text-white text-left">On a une très grande ambition. On a une usine qui tourne, une deuxième en construction dont la production sera des dizaines de fois plus importante et à moyen terme on va s’implanter partout où cela fera sens. Nos insectes sont de très bons convertisseurs de co-produits agricoles qui ont peu de valeur. Pour le moment, on se concentre sur notre deuxième unité de production. Mais on travaille déjà à la suite : on pourrait aller vers d’autres types d’insectes, vendre nos produits à des acteurs de l’agroalimentaire qui transformeraient nos insectes pour l’alimentation humaine, produire des insectes pour rendre des services de pollinisation, de lutte biologique, etc.  Pour résumer, on a posé les bases d’ une nouvelle filière industrielle. On peut, à partir de cette plateforme technologique, envisager de très nombreux développements.</p> 
+            
+            <p class="pt-4 px-40 text-m text-white text-left font-bold">Vous avez récemment quitté vos fonctions opérationnelles à Ynsect, pourquoi cette décision ? L’entrepreneur que vous êtes doit bien avoir quelques nouveaux projets, vous pouvez nous en parler ?</p>
+            
+            <p class="pt-2 px-40 text-m text-white text-left">J’ai consacré presque 10 ans à Ynsect, j’avais l’impression d’avoir accompli ce que je voulais accomplir. D’avoir mené le projet au niveau de maturité que je voulais. Dès lors, c’était une sorte d’évidence pour moi de tourner la page. Il y a aussi, comme pour toute grande décision, une part d’irrationnel, de « gut feeling » . Aujourd’hui je m’investis sur pas mal de chose, même si je ne veux pas me relancer tout de suite sur un gros projet, j’ai pas mal d’idées en tête. L’aventure entrepreneuriale est un peu comme un marathon, c’est quelque chose qui peut être usant dans la durée donc je savais que j’aurais besoin d’un petit temps de repos pour reprendre ma lucidité et m’ouvrir à de nouvelles opportunités. Je le fais notamment en accompagnant des jeunes entrepreneurs qui sont nombreux à me contacter pour me parler de leurs projets, de leur business et qui me demandent à ce que modestement je puisse les accompagner et je le fais avec énormément de plaisir. J’ai aussi investi dans un certain nombre de startups et je travaille sur un projet de fonds d’investissement spécialisé en « secondaire direct ». L’écosystème français des startups est jeune et il manque d’histoires du type  « Mon oncle a investi dans une startup il y a 9 ans et il a multiplié sa mise par 5 ou 6 ». Il faut que ce type d’histoire devienne de plus en plus banal. Cela sera possible si -comme cela existe depuis des années aux US- des fonds d’investissement de secondaire direct naissent en France et en Europe.</p>
+            
+            <p class="pt-5 px-40 text-m text-white text-left font-bold">Si vous aviez un conseil à donner aux étudiants attirés par une aventure entrepreneuriale ?</p>
+            
+            <p class="pt-2 px-40 text-m text-white text-left">Lancez-vous, vous n’avez rien à perdre, vous êtes jeunes, bien formés et vous êtes dans un pays qui aime les entrepreneurs.</p>
+
+        </p>
+        
+
+    </div>
+
+    <div id="spacer" class="h-32"></div>
+    <footer class="px-8 md:px-10 lg:px-20 xl:px-40 bg-gray-900 text-gray-600 text-sm"
+    style="background-image: url(images/rocket.png);background-position:center;background-size:cover">
+
+    <div class="w-full h-8"></div>
+
+    <div class="flex flex-col md:flex-row justify-around items-start">
+        <div class="w-full md:w-1/4 md:px-6 flex flex-col justify-center items-justify">
+            <h3 class="text-lg font-bold text-gray-500">Mentions légales</h3>
+
+            <div class="h-1"></div>
+
+            <h4 class="font-bold">Directeur de la publication :</h4>
+            <p>Lily Gasztowtt</p>
+
+            <div class="h-2"></div>
+
+            <p><span class="font-bold">Éditeur :</span> Ce site est produit par ESSEC Initiatives. Pour toute
+                question relative au site, contactez essecinitiatives@gmail.com.</p>
+        </div>
+
+        <div id="spacer" class="h-4 md:h-0"></div>
+
+        <div class="w-full md:w-1/4 md:px-2 flex flex-col justify-center items-justify">
+            <h3 class="text-lg font-bold text-gray-500">À propos de l'association</h3>
+
+            <div class="h-1"></div>
+
+            <p>ESSEC Initiatives est une association étudiante (Siren: 418 278 412 R.C.S. Paris) dépendante de
+                l'École Supérieure des Sciences Économiques et Commerciales. Son siège social est au 3 Avenue
+                Bernard Hirsch, 95000 Cergy.</p>
+        </div>
+
+        <div id="spacer" class="h-4 md:h-0"></div>
+
+        <div class="w-full md:w-1/4 md:px-6 flex flex-col justify-center items-justify">
+            <h3 class="text-lg font-bold text-gray-500">Nous rejoindre</h3>
+
+            <div class="h-1"></div>
+
+            <p>L'association est réservée aux étudiants de l'ESSEC. Quiconque peut présenter sa candidature aux deux
+                sessions annuelles de recrutement ayant lieu en Octobre et en Mars.</p>
+        </div>
+
+        <div id="spacer" class="h-4 md:h-0"></div>
+
+        <div class="w-full md:w-1/4 flex flex-col justify-center items-justify">
+            <h3 class="text-lg font-bold text-gray-500">Sur les réseaux</h3>
+
+            <div>
+                <button class="text-3xl inline-block bg-transparent mx-1 hover:text-gray-800"><a
+                        href="https://fr.linkedin.com/company/essec-initiatives"><i
+                            class="fab fa-linkedin-in"></i></a></button>
+
+                <button class="text-3xl inline-block bg-transparent mx-1 hover:text-gray-800"><a
+                        href="https://fr-fr.facebook.com/essec.initiatives/"><i
+                            class="fab fa-facebook-f"></i></a></button>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="w-full h-8"></div>
+
+    </footer>
+</body>
+
+</html>
