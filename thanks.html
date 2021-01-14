@@ -55,40 +55,31 @@
             <a href="index.html"><img src="images/nitiatalt.png" alt="" class="m-2 w-64 bg-nitiatdark"></a>
 
             <div class="dropdown">
-                <img src="images/dropdown.png" alt="" onclick="myFunction()" class="dropbtn m-2 w-16 h-16">
+                <img src="images/dropdown.png" alt="" onclick="showMobileDropdown()" class="dropbtn m-2 w-16 h-16">
             </div>
 
         </div>
 
-        <div id="myDropdown"
-            class="dropdown-content m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
-            <a href="missions.html"
-                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg hover:bg-nitiatlight">Missions</a>
-            <a href="https://tedxessecbusinessschool.fr" target="_blank"
-                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
-            <a href="events.html"
-                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
-            <a href="contact.html"
-                class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
+        <div id="myDropdown" class="dropdown-content hidden m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
+            <a href="missions.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg">Missions</a>
+            <a href="https://tedxessecbusinessschool.fr" target="_blank" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
+            <a href="events.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
+            <a href="education.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Éducation</a>
+            <a href="contact.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
         </div>
-
-
+  
+  
         <script>
             /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
+            function showMobileDropdown() {
+                document.getElementById("myDropdown").classList.toggle("hidden");
             }
-
+  
             // Close the dropdown menu if the user clicks outside of it
             window.onclick = function (event) {
                 if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
+                    if (!document.getElementById("myDropdown").classList.contains("hidden")) {
+                      document.getElementById("myDropdown").classList.toggle("hidden");
                     }
                 }
             }
