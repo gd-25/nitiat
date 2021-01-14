@@ -43,7 +43,7 @@
         <a href="index.html"><img src="images/nitiatalt.png" alt="" class="px-1 py-2 ml-2 h-20"></a>
 
         <div class=" h-20 mr-8 flex flex-row justify-center items-center text-white">
-            <a href="missions.html" class="px-3 text-xl font-bold hover:text-nitiatlight">Missions</a>
+            <a href="missions.html" class="px-3 text-xl font-bold font-MabryPro hover:text-nitiatlight">Missions</a>
             <a href="https://tedxessecbusinessschool.fr" target="_blank" class="px-3 text-xl font-bold hover:text-tedred">TEDx</a>
             <a href="events.html" class="px-3 text-xl font-bold hover:text-nitiatlight">Évènements</a>
             <a href="education.html" class="px-3 text-xl font-bold text-nitiatlight">Éducation</a>
@@ -53,41 +53,41 @@
     </div>
 
     <div class="md:hidden w-full fixed flex flex-col justify-center items-end">
-      <div class="w-full flex flex-row justify-around items-center self-center bg-nitiatdark">
-          <a href="index.html"><img src="images/nitiatalt.png" alt="" class="m-2 w-64 bg-nitiatdark"></a>
+        <div class="w-full flex flex-row justify-around items-center self-center bg-nitiatdark">
+            <a href="index.html"><img src="images/nitiatalt.png" alt="" class="m-2 w-64 bg-nitiatdark"></a>
 
-          <div class="dropdown">
-              <img src="images/dropdown.png" alt="" onclick="showMobileDropdown()" class="dropbtn m-2 w-16 h-16">
-          </div>
+            <div class="dropdown">
+                <img src="images/dropdown.png" alt="" onclick="myFunction()" class="dropbtn m-2 w-16 h-16">
+            </div>
 
-      </div>
+        </div>
 
-      <div id="myDropdown" class="dropdown-content hidden m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
-          <a href="missions.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg">Missions</a>
-          <a href="https://tedxessecbusinessschool.fr" target="_blank" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
-          <a href="events.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
-          <a href="education.html" class="w-40 bg-nitiatlight text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Éducation</a>
-          <a href="contact.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
-      </div>
+        <div id="myDropdown" class="dropdown-content hidden m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
+            <a href="missions.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg">Missions</a>
+            <a href="https://tedxessecbusinessschool.fr" target="_blank" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
+            <a href="events.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
+            <a href="education.html" class="w-40 bg-nitiatlight text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Éducation</a>
+            <a href="contact.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
+        </div>
+  
+  
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function showMobileDropdown() {
+                document.getElementById("myDropdown").classList.toggle("hidden");
+            }
+  
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    if (!document.getElementById("myDropdown").classList.contains("hidden")) {
+                      document.getElementById("myDropdown").classList.toggle("hidden");
+                    }
+                }
+            }
+        </script>
 
-
-      <script>
-          /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-          function showMobileDropdown() {
-              document.getElementById("myDropdown").classList.toggle("hidden");
-          }
-
-          // Close the dropdown menu if the user clicks outside of it
-          window.onclick = function (event) {
-              if (!event.target.matches('.dropbtn')) {
-                  if (!document.getElementById("myDropdown").classList.contains("hidden")) {
-                    document.getElementById("myDropdown").classList.toggle("hidden");
-                  }
-              }
-          }
-      </script>
-
-  </div>
+    </div>
     <!--End of the header-->
 
     <div class="flex flex-col text-white font-hairline">
@@ -136,13 +136,13 @@
 
         <!--Articles section-->
         <div class="flex w-full">
-            <div class= "w-2/6 flex flex-col pb-6 mx-6">
+            <div class= "w-2/6 flex flex-col pb-10 lg:pb-6 md:pb-6 mx-6">
                 <div class="h-16 border-b-2"></div>
             </div>
-            <div class= "w-2/6 flex flex-row mx-2 border-none border-white justify-center">
-                <h2 class="font-bold text-6xl align-top">Nos articles</h2>
+            <div class= "w-2/6 whitespace-nowrap flex flex-row mx-2 border-none border-white justify-center content">
+                <p class="xs:text-xl content-end pt-4 md:pt-2 lg:pt-1 xs:whitespace-nowrap xs:overflow-x-auto md:text-6xl lg:text-6xl font-bold px-3 md:align-top lg:align-top">Nos articles</p>
             </div>
-            <div class= "w-2/6 flex flex-col pb-6 mx-6">
+            <div class= "w-2/6 flex flex-col pb-10 lg:pb-6 md:pb-6 mx-6">
                 <div class="h-16 border-b-2 border-white"></div> 
             </div>
         </div>

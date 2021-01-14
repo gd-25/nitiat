@@ -52,41 +52,41 @@
     </div>
 
     <div class="md:hidden w-full fixed flex flex-col justify-center items-end">
-      <div class="w-full flex flex-row justify-around items-center self-center bg-nitiatdark">
-          <a href="index.html"><img src="images/nitiatalt.png" alt="" class="m-2 w-64 bg-nitiatdark"></a>
+        <div class="w-full flex flex-row justify-around items-center self-center bg-nitiatdark">
+            <a href="index.html"><img src="images/nitiatalt.png" alt="" class="m-2 w-64 bg-nitiatdark"></a>
 
-          <div class="dropdown">
-              <img src="images/dropdown.png" alt="" onclick="showMobileDropdown()" class="dropbtn m-2 w-16 h-16">
-          </div>
+            <div class="dropdown">
+                <img src="images/dropdown.png" alt="" onclick="myFunction()" class="dropbtn m-2 w-16 h-16">
+            </div>
 
-      </div>
+        </div>
 
-      <div id="myDropdown" class="dropdown-content hidden m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
-          <a href="missions.html" class="w-40 bg-nitiatlight text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg">Missions</a>
-          <a href="https://tedxessecbusinessschool.fr" target="_blank" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
-          <a href="events.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
-          <a href="education.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Éducation</a>
-          <a href="contact.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
-      </div>
+        <div id="myDropdown" class="dropdown-content hidden m-2 flex flex-col justify-center items-center bg-nitiatblack rounded-lg shadow-xl">
+            <a href="missions.html" class="w-40 bg-nitiatlight text-center py-3 px-3 text-white text-xl font-bold rounded-t-lg">Missions</a>
+            <a href="https://tedxessecbusinessschool.fr" target="_blank" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">TEDx</a>
+            <a href="events.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Évènements</a>
+            <a href="education.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight">Éducation</a>
+            <a href="contact.html" class="w-40 bg-nitiatblack text-center py-3 px-3 text-white text-xl font-bold hover:bg-nitiatlight rounded-b-lg">Contact</a>
+        </div>
+  
+  
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function showMobileDropdown() {
+                document.getElementById("myDropdown").classList.toggle("hidden");
+            }
+  
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    if (!document.getElementById("myDropdown").classList.contains("hidden")) {
+                      document.getElementById("myDropdown").classList.toggle("hidden");
+                    }
+                }
+            }
+        </script>
 
-
-      <script>
-          /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-          function showMobileDropdown() {
-              document.getElementById("myDropdown").classList.toggle("hidden");
-          }
-
-          // Close the dropdown menu if the user clicks outside of it
-          window.onclick = function (event) {
-              if (!event.target.matches('.dropbtn')) {
-                  if (!document.getElementById("myDropdown").classList.contains("hidden")) {
-                    document.getElementById("myDropdown").classList.toggle("hidden");
-                  }
-              }
-          }
-      </script>
-
-  </div>
+    </div>
     <!--End of the header-->
 
     <div class="flex flex-col justify-center items-center text-white font-hairline">
@@ -212,9 +212,11 @@
 
         <div id="spacer" class="w-full h-20 md:h-12"></div>
 
+        <div id="spacer" class="w-full h-20 md:h-12"></div>
+
         <div class="h-auto flex flex-col md:flex-row justify-center items-center">
 
-            <div class="w-72 xs:w-80 md:w-100 font-light xs:text-xl text-justify leading-snug md:mr-10">
+            <div class="w-72 md:w-1/2 md:px-8 xs:w-80 md:w-100 font-light xs:text-xl text-justify leading-snug md:mr-10">
                 <p>"L’équipe d’ESSEC Initiatives a fait preuve d’un grand professionnalisme dans la prise en main de sa
                     mission pour Citygo. <span class=font-semibold>Aussi bien dans la communication tout au long de la
                         mission pour assurer la bonne atteinte des objectifs que dans les livrables délivrés dans les
@@ -222,11 +224,12 @@
             </div>
 
             <div id="spacer" class="h-8 md:h-0"></div>
+            <div id="spacer" class="h-8 md:h-0"></div>
 
             <div class="flex flex-row justify-center items-center">
                 <img src="images/prc.png" class="h-20 md:h-32 rounded-full mr-4 hidden xs:inline">
 
-                <div class="flex flex-col justify-center items-left text-white">
+                <div class="flex flex-col px-8 justify-center items-left text-white">
                     <h3 class="text-lg font-bold leading-tight">Patrick Robinson Clough</h3>
                     <h4 class="text-lg font-thin leading-tight">Co-founder & CEO</h4>
                     <img src="images/citygo.png" alt="" class="w-40">
@@ -235,6 +238,7 @@
         </div>
 
         <div id="spacer" class="h-12"></div>
+        <div id="spacer" class="w-full h-20 md:h-12"></div>
 
     </div>
 
